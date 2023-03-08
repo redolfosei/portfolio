@@ -1,0 +1,104 @@
+:root {
+    --cyan: #00ffff;
+    --gray: rgb(173,173,170);
+}
+
+.detail {
+    font-size: 1.1rem;
+}
+
+.icons-container {
+    position: fixed;
+    bottom: 0px;
+}
+
+.icons-container .icons {
+    list-style-type: none;
+}
+
+.icons-container .icons li {
+    font-size: 40px;
+    margin: 5px 0px;
+}
+
+.icons-container .icons::after {
+    content:"";
+    display: block;
+    width: 1px;
+    height: 90px;
+    margin-top: 10px;
+    margin-left: 16px;
+    background-color: var(--gray);
+}
+
+.email-container {
+    position: fixed;
+    bottom: 30px;
+    right: 15px;
+}
+
+.email-container p {
+    color:var(--gray);
+    writing-mode: vertical-lr;
+}
+
+.email-container p::after {
+    content:"";
+    display: inline-block;
+    width: 1px;
+    height: 90px;
+    margin-top: 10px;
+    margin-right: 3px;
+    background-color: var(--gray); 
+}
+
+main {
+    margin-top: 120px;
+    margin-left: 100px;
+}
+
+main h1 {
+    font-size: 4vw;
+}
+
+main .hi_name {
+    color: var(--cyan);
+}
+
+main h2 {
+    font-size: 50px;
+    color: var(--gray);
+    font-size: 5vw;
+}
+
+main .detail {
+    color: var(--gray);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+main button {
+    border: 1px solid var(--cyan);
+    padding: 5px;
+    border-radius: 3px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: var(--cyan);
+}
+
+main button:hover {
+    background-color: rgb(115, 134, 133,0.5) !important;
+    color: var(--gray);
+}
+
+@media only screen and (max-width: 768px) {
+    .icons-container, .email-container {
+        display: none;
+    }
+
+    main {
+        margin-top: 100px;
+        margin-left: 50px;
+        margin-right: 30px;
+    }
+}

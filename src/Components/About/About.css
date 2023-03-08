@@ -1,0 +1,30 @@
+:root {
+    --cyan: #00ffff;
+    --gray: rgb(173,173,170);
+}
+
+.about {
+    margin-top: 150px;
+}
+
+.about_text h3 {
+    color: white;
+}
+
+.about_text p {
+    font-size: 1.1rem;
+}
+
+.about_text h3 span {
+    color: var(--cyan);
+    font-size: 12px;
+}
+
+.about_text {
+    color: var(--gray);
+    text-align: justify;
+}
+
+.technology span {
+    color: var(--cyan);
+}

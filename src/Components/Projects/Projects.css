@@ -1,0 +1,37 @@
+:root {
+    --cyan: #00ffff;
+    --gray: rgb(173,173,170);
+}
+
+.projects {
+    margin-top: 120px;
+}
+
+.prjtitle {
+    color: white;
+}
+
+.card:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.card {
+    transition: 2s;
+}
+
+.card-body {
+    color: var(--gray);
+}
+
+.card-body button {
+    padding: 3px 10px;
+    font-size: 14px;
+    color: var(--gray);
+    border: 1px solid var(--cyan);
+}
+
+.card-body button:hover {
+    background-color: rgba(62, 122, 130, 0.4) !important;
+    color: var(--cyan);
+}
